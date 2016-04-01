@@ -33,6 +33,7 @@ body {
 }
 a{
   text-decoration: none;
+  color: white;
 }
 .submit{
   background: white;
@@ -46,6 +47,7 @@ a{
   font-size: 20px;
   border:none;
   color: white;
+
 }
 #find:hover{
   background: #ffad32;
