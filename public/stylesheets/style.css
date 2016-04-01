@@ -1,130 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+html {
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
-
-ul {
-  list-style: none;
-
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
-li {
-  padding-bottom: 20px;
+
+
+.container {
+  padding-top: 70px;
+  background:rgba(255, 255, 255, .75);
+  margin-top: 70px;
+  border-radius: 10px;
+
 }
 
-nav {
-  text-align: center;
-}
-
-/* line 7, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-html, body {
-  height: 100%;
-  position: relative;
-}
-
-/* line 11, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-body {
-  font-family: Lato;
-  text-align: center;
-  padding: 20px;
-}
-
-/* line 16, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-h1, h2, h3 {
-  margin: 0;
-}
-
-/* line 19, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-h1 {
-  font-size: 60px;
-}
-
-/* line 22, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-h2 {
-  font-size: 40px;
-}
-
-/* line 25, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-h3 {
-  margin-bottom: 10px;
-  font-size: 25px;
-}
-
-/* line 29, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-h4 {
-  font-size: 20px;
-  margin: 20px;
-}
-
-/* line 33, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-}
-
-/* line 38, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-/* line 43, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-ul#cats li {
-  border: 2px solid black;
-  padding: 10px;
+.container input {
   width: 500px;
-  margin: 20px auto;
+  height: 50px;
 }
-
-/* line 50, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-p {
-  width: 500px;
-  font-size: 16px;
-  margin: 20px auto;
-  word-wrap: break-word;
-}
-
-/* line 56, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-input {
-  border: 1px solid black;
-  width: 300px;
-  text-align: center;
-  padding: 4px;
-}
-
-/* line 62, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-input[type="submit"] {
-  background: transparent;
-  transition: 0.5s;
-}
-/* line 65, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-input[type="submit"]:hover {
-  border-color: transparent;
-}
-
-/* line 69, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-textarea {
-  width: 300px;
-  height: 200px;
-  text-align: center;
-}
-
-/* line 74, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-a.link {
+a{
   text-decoration: none;
-  border-bottom: 1px solid black;
-  color: black;
-  transition: 0.5s;
 }
-/* line 79, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
-a.link:hover {
-  border-color: transparent;
+.submit{
+  background: white;
+  font-size: 20px;
+  border:none;
+
 }
 
-
+#find{
+  background: #ff9900;
+  font-size: 20px;
+  border:none;
+  color: white;
+}
+#find:hover{
+  background: #ffad32;
+}

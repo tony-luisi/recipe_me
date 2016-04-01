@@ -1,23 +1,21 @@
 <!DOCTYPE html>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+     <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
 
 
 <!-- .container is main centered wrapper -->
 <div class="container">
-
   <!-- columns should be the immediate child of a .row -->
   <div class="row">
     <div class="twelve columns">
-      <nav>
-        <a class="link" href="/">search new</a>
-      </nav>
+
       <h1>your next meal is ...</h1>
       <h3>{{title}}</h3><br>
-       <img src="{{image_url}}" alt ="{{name}}"><br><br>
+       <a href="{{source_url}}"><img src="{{image_url}}" alt ="{{name}}"></a>
        {{recipe}}
-
     </div>
+     <button class="submit" id="find"><a href="/">search new</a></button>
   </div>
 
 </div>
