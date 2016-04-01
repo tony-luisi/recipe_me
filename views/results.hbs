@@ -1,13 +1,26 @@
-<h1>PUT THE RESULT OF THE RECIPE HERE</h1>
+<!DOCTYPE html>
+<link rel="stylesheet" type"text/css" href="../public/stylesheets/normalize.css"
+<link rel="stylesheet" type"text/css" href="../public/stylesheets/skeleton.css"
+
+
+<!-- .container is main centered wrapper -->
+<div class="container">
+
+  <!-- columns should be the immediate child of a .row -->
+  <div class="row">
+    <div class="one column">One</div>
+    <div class="eleven columns">
+      <h1>your next meal is ...</h1>
 <nav>
-  <a class="link" href="/cats/">Homepage</a>
+  <a class="link" href="/searchRecipe/">search new</a>
 </nav>
 
-<ul id = 'cats'>
-  <li>
- <h3>{{name}}</h3><br>
- <img src="{{image}}" alt = "{{name}}"><br><br>
- {{description}}</li>
-</ul>
 
-<a class="link" href="/cats/edit/{{id}}">Edit Cat</a>
+
+ <h3>{{name}}</h3><br>
+ <img src="{{image}}" alt ="{{name}}"><br><br>
+ {{recipe}}</li>
+    </div>
+  </div>
+
+</div>
