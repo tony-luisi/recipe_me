@@ -25,11 +25,18 @@ app.get('/search', function(req, res) {
 })
 
 app.post('/search', function(req,res) {
-  request.get('http://food2fork.com/api/search?key=d38b86e56e463fc2a8efb429bf1a0992&q=milk')
+  var ingredients = req.body.name
+  var query = escape(ingredients[0] + ','+ ingredients[1]+','+ingredients[2])
+
+
+
+
+  request.get('http://food2fork.com/api/search?key=d38b86e56e463fc2a8efb429bf1a0992&q='+query)
   .set('Accept','application/json')
   .end(function(err,response){
     var recipeResponse = JSON.parse(response.text)
-    res.render('results', recipeResponse)
+    console.log(recipeResponse.recipes[0], "reciperesponse..................")
+    res.render('results', recipeResponse.recipes[0])
   })
 
 })
