@@ -39,14 +39,7 @@ app.get('/search', function(req, res) {
  res.render('searchRecipe')
 })
 
-//app.get('/results', function(req, res) {
- //res.render('results', recipe)
-//})
-
-//app.post('/results', function(req,res) {
-//  res.render('results', recipe)
-
-app.post('/search', function(req,res) {
+app.post('/results', function(req,res) {
   var ingredients = req.body.name
   var query = escape(ingredients[0] + ','+ ingredients[1]+','+ingredients[2])
 
