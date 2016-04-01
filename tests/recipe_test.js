@@ -54,7 +54,7 @@ test('POST /search/no ingredients', function (t) {
       console.log(res.text)
 //      var images = $('img')
 
-  //    t.equal(images.length, 1, "the number of images in the page is 1")
+  //    t.equal(images.length, 1, "if the inputs are empty, app should return no results found")
       t.end()
     })
 

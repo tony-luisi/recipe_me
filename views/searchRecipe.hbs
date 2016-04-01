@@ -2,17 +2,17 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
     <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
-
+    <link rel="stylesheet" type="text/css" href="./stylesheets/animate.css">
 
 <!-- .container is main centered wrapper -->
 <div class="container">
 
-  <h1 "row">Recipe ME</h1>
+  <h1 class="row">Recipe ME</h1>
 <form class="searchRecipe" id="ingredient" action="/results" accept-charset="UTF-8" method="post">
   <p>
-    <input placeholder="enter first ingredient" type="text" name="name" id="input1" /><br><br>
-    <input placeholder="enter second ingredient" type="text" name="name" id="input2" /><br><br>
-    <input placeholder="enter third ingredient" type="text" name="name" id="input1" /><br><br>
+    <input class="animated slideInLeft" placeholder="enter first ingredient" type="text" name="name" id="input1" /><br><br>
+    <input class="animated slideInRight" placeholder="enter second ingredient" type="text" name="name" id="input2" /><br><br>
+    <input class="animated slideInLeft" placeholder="enter third ingredient" type="text" name="name" id="input1" /><br><br>
     <input value="find recipe"type="submit" id="find"></input>
   </p>
 </form>
@@ -21,4 +21,3 @@
   </div>
 
 </div>
-
