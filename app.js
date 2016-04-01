@@ -41,6 +41,12 @@ app.get('/search', function(req, res) {
 
 app.post('/results', function(req,res) {
   var ingredients = req.body.name
+  if (ingredients[0].length < 1 && ingredients[1].length < 1 && ingredients[2].length < 1) {
+    ingredients[0] = "marmite"
+    ingredients[1] = "marmite"
+    ingredients[2] = "marmite"
+  }
+
   var query = escape(ingredients[0] + ','+ ingredients[1]+','+ingredients[2])
 
   request.get('http://food2fork.com/api/search?key=d38b86e56e463fc2a8efb429bf1a0992&q='+query)
@@ -48,6 +54,7 @@ app.post('/results', function(req,res) {
   .end(function(err,response){
     var recipeResponse = JSON.parse(response.text)
     console.log(recipeResponse.recipes[0], "reciperesponse..................")
+    recipeResponse.recipes[0].title = recipeResponse.recipes[0].title.replace(/&amp;/g, '&')
     res.render('results', recipeResponse.recipes[0])
   })
 
