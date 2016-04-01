@@ -13,6 +13,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+#logo {
+  width: 400px;
+}
+
 
 
 .container {
