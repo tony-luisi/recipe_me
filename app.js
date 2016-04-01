@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var fs = require ('fs');
+var request = require('superagent')
 
 var app = express();
 
@@ -24,8 +25,13 @@ app.get('/search', function(req, res) {
 })
 
 app.post('/search', function(req,res) {
-  console.log("do something")
-  res.render('results')
+  request.get('http://food2fork.com/api/search?key=d38b86e56e463fc2a8efb429bf1a0992&q=milk')
+  .set('Accept','application/json')
+  .end(function(err,response){
+    var recipeResponse = JSON.parse(response.text)
+    res.render('results', recipeResponse)
+  })
+
 })
 
 module.exports = app;
