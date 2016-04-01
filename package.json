@@ -7,8 +7,11 @@
   },
   "dependencies": {
     "body-parser": "~1.13.2",
+    "cheerio": "^0.20.0",
     "express": "~4.13.1",
     "hbs": "~3.1.0",
-    "superagent": "^1.8.3"
+    "superagent": "^1.8.3",
+    "supertest": "^1.2.0",
+    "tape": "^4.5.1"
   }
 }
