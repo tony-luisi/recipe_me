@@ -1,13 +1,23 @@
-<h1>PUT THE RESULT OF THE RECIPE HERE</h1>
-<nav>
-  <a class="link" href="/cats/">Homepage</a>
-</nav>
+<!DOCTYPE html>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
 
-<ul id = 'cats'>
-  <li>
- <h3>{{name}}</h3><br>
- <img src="{{image}}" alt = "{{name}}"><br><br>
- {{description}}</li>
-</ul>
 
-<a class="link" href="/cats/edit/{{id}}">Edit Cat</a>
+<!-- .container is main centered wrapper -->
+<div class="container">
+
+  <!-- columns should be the immediate child of a .row -->
+  <div class="row">
+    <div class="twelve columns">
+      <nav>
+        <a class="link" href="/">search new</a>
+      </nav>
+      <h1>your next meal is ...</h1>
+      <h3>{{title}}</h3><br>
+       <img src="{{image_url}}" alt ="{{name}}"><br><br>
+       {{recipe}}
+
+    </div>
+  </div>
+
+</div>
