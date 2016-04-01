@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<link rel="stylesheet" type"text/css" href="../public/stylesheets/normalize.css"
-<link rel="stylesheet" type"text/css" href="../public/stylesheets/skeleton.css"
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
 
 
 <!-- .container is main centered wrapper -->
@@ -8,18 +8,15 @@
 
   <!-- columns should be the immediate child of a .row -->
   <div class="row">
-    <div class="one column">One</div>
-    <div class="eleven columns">
+    <div class="twelve columns">
+      <nav>
+        <a class="link" href="/">search new</a>
+      </nav>
       <h1>your next meal is ...</h1>
-<nav>
-  <a class="link" href="/searchRecipe/">search new</a>
-</nav>
+      <h3>{{title}}</h3><br>
+       <img src="{{image_url}}" alt ="{{name}}"><br><br>
+       {{recipe}}
 
-
-
- <h3>{{name}}</h3><br>
- <img src="{{image}}" alt ="{{name}}"><br><br>
- {{recipe}}</li>
     </div>
   </div>
 
