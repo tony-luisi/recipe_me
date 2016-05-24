@@ -9,6 +9,6 @@ Very simple group project that lets you type in three random ingredients, and a 
 - Express
 
 ## To run
-git clone
-npm i
-npm run start (uses nodemon)
+- git clone
+- npm i
+- npm run start (uses nodemon)
